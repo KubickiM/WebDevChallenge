@@ -22,11 +22,16 @@
 }
 
 .reg {
-    width: 382px;
     height: 419px;
 }
 
+.singin,
+.recover {
+    height: 197px;
+}
+
 form {
+    width: 382px;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
@@ -64,14 +69,22 @@ form {
             background: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
             background-color: #93d02b;
             border-radius: 2px;
-            margin-top: 12px;
+            margin-top: 16px;
+        }
+        .input-singup {
             width: 338px;
             height: 48px;
+        }        
+        .input-singin {
+            width: 338px;
+            height: 41px;
         }
+
+
     }
     .iconc {
         width: 338px;
-        margin-top: 12px;
+        margin-top: 16px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
