@@ -6,11 +6,18 @@
     box-sizing: border-box;
 }
 
+body {
+        background-image: url('bg.png') no-repeat center;  
+}
+
 .container {
-    width: 919px;
+
+    width: 1050px;
+    height: 1375px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+
 }
 
 .column {
@@ -19,6 +26,7 @@
     width: 390px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .reg {
@@ -31,10 +39,13 @@
 }
 
 form {
+    margin-top: 40px;
     width: 382px;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.2);
+    border-radius: 1px;
 
     .icon {
         width: 100%;
@@ -52,6 +63,7 @@ form {
             padding-left: 50px;
             &::placeholder {
                 color: lightgray;
+                
             }
         }
     }
