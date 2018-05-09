@@ -94,17 +94,25 @@ form {
         border-radius: 2px;
 
     }
-    
-    
-        input[type=textarea] {
-            border: 0.5px solid gray;
-            border-radius: 2px;
-            &::placeholder{
-          
-                    
-                }
-            
+
+
+    textarea {
+        border: 0.5px solid gray;
+        border-radius: 2px;
+        margin-top: 20px;
+        width: 337px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        resize: none;
+        &::placeholder {
+            color: lightgray;
+
+
         }
+
+    }
     .input-singup {
         width: 338px;
         height: 48px;
@@ -116,14 +124,7 @@ form {
         width: 139px;
         height: 41px;
     }
-    .input-mail {
-        margin-top: 20px;
-        width: 337px;
-        height: 230px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-    }
+
 
 
     .iconc {
@@ -146,6 +147,7 @@ form {
 
                 -webkit-appearance: none;
                 -o-appearance: none;
+                -moz-appearance: none;
                 appearance: none;
                 background-color: #fafafa;
                 border: 1px solid #cacece;
