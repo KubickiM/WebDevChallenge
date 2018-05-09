@@ -11,10 +11,12 @@ body {
     background-size: cover;
 }
 
-h1{
+h1 {
+    margin-top: 40px;
     text-align: center;
     color: white;
 }
+
 .container {
     width: 1050px;
     height: 1375px;
@@ -30,7 +32,7 @@ h1{
     width: 390px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .reg {
@@ -42,13 +44,17 @@ h1{
     height: 197px;
 }
 
+.mail {
+    height: 496px;
+}
+
 form {
     margin-top: 34px;
     width: 382px;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
     border-radius: 1px;
 
     .icon {
@@ -67,40 +73,59 @@ form {
             padding-left: 50px;
             &::placeholder {
                 color: lightgray;
-                
+
             }
         }
     }
-    
-            input[type=submit] {
 
-            font-family: TitilliumText22L;
-            font-size: 24px;
-            color: #fff;
-            text-shadow: 1px 1px #51850e;
-            border: 0.5px solid green;
-            background-blend-mode: overlay;
-            box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
-            background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-            background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-            background-color: #93d02b;
+    input[type=submit] {
+
+        font-family: TitilliumText22L;
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 1px 1px #51850e;
+        border: 0.5px solid green;
+        background-blend-mode: overlay;
+        box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
+        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+        background-color: #93d02b;
+        border-radius: 2px;
+
+    }
+    
+    
+        input[type=textarea] {
+            border: 0.5px solid gray;
             border-radius: 2px;
+            &::placeholder{
+          
+                    
+                }
             
         }
-        .input-singup {
-            width: 338px;
-            height: 48px;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }        
-        .input-singin {
-            width: 139px;
-            height: 41px;
-            
-            
-        }
+    .input-singup {
+        width: 338px;
+        height: 48px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-singin {
+        width: 139px;
+        height: 41px;
+    }
+    .input-mail {
+        margin-top: 20px;
+        width: 337px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+
     .iconc {
         width: 338px;
         margin-top: 16px;
@@ -113,54 +138,54 @@ form {
 
 
 
-        .checkbox{
+        .checkbox {
             display: flex;
             align-items: center;
-            
-        input[type=checkbox] {
 
-            -webkit-appearance: none;
-            -o-appearance: none;
-            appearance: none;
-            background-color: #fafafa;
-            border: 1px solid #cacece;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-            padding: 12px;
-            border-radius: 3px;
-            display: inline-block;
-            position: relative;
-            &:active,
-            &:checked:active {
-                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
-            }
-            &:checked {
-                background-color: #e9ecee;
-                border: 1px solid #adb8c0;
-                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
-                color: #99a1a7;
-            }
-            &:checked:after {
-                content: '';
-                width: 14px;
-                height: 14px;
-                position: absolute;
+            input[type=checkbox] {
+
+                -webkit-appearance: none;
+                -o-appearance: none;
+                appearance: none;
+                background-color: #fafafa;
+                border: 1px solid #cacece;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                padding: 12px;
                 border-radius: 3px;
-                background-blend-mode: overlay;
-                box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
-                background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-                background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-                background-color: #93d02b;
-                color: #99a1a7;
-                left: 5px;
-                top: 5px;
+                display: inline-block;
+                position: relative;
+                &:active,
+                &:checked:active {
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+                }
+                &:checked {
+                    background-color: #e9ecee;
+                    border: 1px solid #adb8c0;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+                    color: #99a1a7;
+                }
+                &:checked:after {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    border-radius: 3px;
+                    background-blend-mode: overlay;
+                    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
+                    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+                    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+                    background-color: #93d02b;
+                    color: #99a1a7;
+                    left: 5px;
+                    top: 5px;
+                }
+            }
+            p {
+                margin-left: 10px;
+
             }
         }
-        p {
-            margin-left: 10px;
-
-        }
-    }
     }
 
 
