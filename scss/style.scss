@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1 {
@@ -88,7 +89,7 @@ form {
         align-items: center;
 
 
-        input[type=text] {
+        input[type=text], select {
             border: 0.5px solid gray;
             border-radius: 2px;
             margin-left: auto;
@@ -130,8 +131,15 @@ form {
             background-color: white;
         }
         .location {
-            background: url(img/loc.png) no-repeat 6.25% !important;
+            background: url(img/loc.png) no-repeat 6.25% ,url(img/arrow.png) no-repeat 97.25% !important;
             background-color: white;
+            color: lightgray;
+            
+            
+                -webkit-appearance: none;
+                -o-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
         }
         .lock {
             background: url(img/lock.png) no-repeat 5% !important;
