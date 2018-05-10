@@ -38,7 +38,7 @@ footer{
     width: 100%;
     margin-top: 50px;
     height: 146px;
-    opacity: 0.4;
+    
 }
 
 .column {
@@ -71,11 +71,16 @@ form {
     margin-top: 34px;
     margin-bottom: 44px;
     width: 382px;
-    background-color: lightgray;
+    
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 1px;
+        	background-color: #f4f4f4;
+	-webkit-box-shadow: 0 0 9px 1px rgba(0,0,0,.13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 9px 1px rgba(0,0,0,.13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 9px 1px rgba(0,0,0,.13)inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+   
+
+    border-radius: 3px;
 
     .icon {
         width: 100%;
@@ -93,30 +98,43 @@ form {
             width: 338px;
             height: 39px;
             padding-left: 50px;
+            	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #f8f8f8;
+	border: solid 1px #c6c6c6;
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
+	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
+	background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(255,255,255,.38));
+            background-blend-mode: overlay;
+
             &::placeholder {
                 color: lightgray;
+            
 
             }
         }
 
         .email {
-            background: url(img/email.png) no-repeat 3%;
+            background: url(img/email.png) no-repeat 3% !important;
             background-color: white;
         }
         .person {
-            background: url(img/person.png) no-repeat 3%;
+            background: url(img/person.png) no-repeat 3% !important;
             background-color: white;
         }
         .phone {
-            background: url(img/phone.png) no-repeat 4.25%;
+            background: url(img/phone.png) no-repeat 4.25% !important;
             background-color: white;
         }
         .location {
-            background: url(img/loc.png) no-repeat 4.25%;
+            background: url(img/loc.png) no-repeat 4.25% !important;
             background-color: white;
         }
         .lock {
-            background: url(img/lock.png) no-repeat 3%;
+            background: url(img/lock.png) no-repeat 3% !important;
             background-color: white;
         }
 
