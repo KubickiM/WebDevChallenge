@@ -21,6 +21,9 @@ body {
 header {
     margin-top: 50px;
     background: url(img/lg1.png) no-repeat center;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     height: 111px;
     opacity: 0.4;
@@ -34,9 +37,12 @@ main {
     display: flex;
 }
 
-footer{
+footer {
     background: url(img/lg2.png) no-repeat center;
     width: 100%;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     height: 146px;
     opacity: 0.4;
@@ -71,15 +77,15 @@ footer{
 form {
     margin-top: 34px;
     margin-bottom: 44px;
-    width: 382px;
-    
+    width: 390px;
+
     display: flex;
     flex-direction: column;
-        	background-color: #f4f4f4;
-	-webkit-box-shadow: 0 0 9px 1px rgba(0,0,0,.13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 0 9px 1px rgba(0,0,0,.13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 0 9px 1px rgba(0,0,0,.13)inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
-   
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, .13)inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+
 
     border-radius: 3px;
 
@@ -89,7 +95,9 @@ form {
         align-items: center;
 
 
-        input[type=text], select {
+
+        input[type=text],
+        select {
             border: 0.5px solid gray;
             border-radius: 2px;
             margin-left: auto;
@@ -99,21 +107,27 @@ form {
             width: 338px;
             height: 39px;
             padding-left: 69px;
-            	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #f8f8f8;
-	border: solid 1px #c6c6c6;
-	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
-	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
-	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
-	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.38), rgba(255,255,255,.38));
-	background-image: linear-gradient(to top, rgba(0,0,0,.38), rgba(255,255,255,.38));
-            background-blend-mode: overlay;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: #f8f8f8;
+            border: solid 1px #c6c6c6;
+            background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .38), rgba(255, 255, 255, .38));
+            background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, .38), rgba(255, 255, 255, .38));
+            background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .38), rgba(255, 255, 255, .38));
+            background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, .38), rgba(255, 255, 255, .38));
+            background-image: linear-gradient(to top, rgba(0, 0, 0, .38), rgba(255, 255, 255, .38));
 
+            background-blend-mode: overlay;
+            transition-duration: 0.5s;
+            &:hover {
+                border: 1px solid green;
+                box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
+                transition-duration: 0.5s;
+            }
             &::placeholder {
                 color: lightgray;
-            
+
 
             }
         }
@@ -131,15 +145,15 @@ form {
             background-color: white;
         }
         .location {
-            background: url(img/loc.png) no-repeat 6.25% ,url(img/arrow.png) no-repeat 97.25% !important;
+            background: url(img/loc.png) no-repeat 6.25%, url(img/arrow.png) no-repeat 97.25% !important;
             background-color: white;
             color: lightgray;
-            
-            
-                -webkit-appearance: none;
-                -o-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
+
+
+            -webkit-appearance: none;
+            -o-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
         .lock {
             background: url(img/lock.png) no-repeat 5% !important;
@@ -175,14 +189,15 @@ form {
         background-color: #93d02b;
         border-radius: 2px;
 
+
     }
-    .done{
+    .done {
         background-color: #bcdb97 !important;
-        border: solid 1px #90ca6d !important;   
-    } 
-    .no{
+        border: solid 1px #90ca6d !important;
+    }
+    .no {
         background-color: #f4495b !important;
-        border: solid 1px #a2202a !important;   
+        border: solid 1px #a2202a !important;
     }
 
 
@@ -196,6 +211,12 @@ form {
         margin-right: auto;
         padding: 10px;
         resize: none;
+        transition-duration: 0.5s;
+        &:hover {
+            border: 1px solid green;
+            box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
+            transition-duration: 0.5s;
+        }
         &::placeholder {
             color: lightgray;
 
@@ -246,6 +267,12 @@ form {
                 border-radius: 3px;
                 display: inline-block;
                 position: relative;
+                transition-duration: 0.5s;
+                &:hover {
+                    border: 1px solid green;
+                    box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
+                    transition-duration: 0.5s;
+                }
                 &:active,
                 &:checked:active {
                     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -314,17 +341,42 @@ form {
         flex-direction: column;
         width: 100%;
     }
-}
 
-@media screen and (max-width:540px) {
-    main {
-        width: 110%;
+    form {
+        width: 290px;
+        .icon {
+            input[type=text],
+            select,
+                {
+                width: 238px;
+            }
+        }
+        .iconc {
+            width: 238px;
+
+        }
+        textarea {
+            width: 238px;
+        }
+        .input-singup {
+            width: 238px;
+        }
+        .input-singin {
+            width: 100px;
+            height: 41px;
+        }
+        .no {
+            font-size: 20px !important;
+        }
+    }
+    .column {
+        width: 290px;
+    }
+    header {
+        width: 290px;
     }
 }
 
-@media screen and (max-width:390px) {
-    main {
-        width: 130%;
-    }
+@media screen and (max-width:540px) {}
 
-}
+@media screen and (max-width:390px) {}
