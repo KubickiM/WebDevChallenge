@@ -125,6 +125,18 @@ form {
                 box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
                 transition-duration: 0.5s;
             }
+            &:focus {
+                color: white;
+                outline: none;
+                border: 1px solid rgba(100, 150, 255, 1);
+                ;
+                box-shadow: inset 200px 200px 0px 200px rgba(100, 150, 255, 0.4);
+                background-color: white;
+                transition-duration: 0.5s;
+                &::-webkit-input-placeholder {
+                    color: white;
+                }
+            }
             &::placeholder {
                 color: lightgray;
 
@@ -188,8 +200,12 @@ form {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
         background-color: #93d02b;
         border-radius: 2px;
-
-
+        cursor: pointer;
+        transition: 0.4s;    
+&:hover {
+  box-shadow: inset 15em 0 0 0 rgba(255,255,255,0.5);
+    border: 1px solid lightgreen;
+}
     }
     .done {
         background-color: #bcdb97 !important;
