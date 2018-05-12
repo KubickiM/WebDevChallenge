@@ -18,3 +18,32 @@
 }
 
 
+/* Color of H1 */
+
+$h1color: white;
+
+/* Form style */
+$bgform: #f4f4f4; /* Form bg */
+$inputborder: #c6c6c6; /* Border of input text and select */
+$inputbg: #f8f8f8; /* Background of input text and select */
+$inputborderhover: green; /* Border of input text and select when you hover */
+$inputborderfocus: rgba(100, 150, 255, 1); /* Border of input text and select when you click on input text */
+$inputplaceholder: lightgray; /* Text color in placeholder */
+$inputbgfocus: rgba(100, 150, 255, 0.4); /* Background when u write in input */
+$inputfocuscolor: white; /* Text color when u write in input */
+$inputspan: lightgray; /* Here you change color of character that separates the picture from the text */
+$inputsubmitborder: green; /* Accept button border */
+$inputsubmitbg: #93d02b; /* Accept button background */
+$inputsubmitborderhover: lightgreen; /* Accept button border when you hover */
+$donebg: #bcdb97; /* Done button background */
+$doneborder: #90ca6d; /* Done button border */
+$nobg: #f4495b; /* no thanks button background */
+$noborder: #a2202a; /* no thanks button border */
+$textarea: gray; /* border of textarea */
+$textareahoberborder: green; /* text area border when you hover */
+$textareahoverbg: rgba(194, 255, 191, 0.4); /* text area background when you hover */
+$textareaplaceholdercolor: lightgray; /* text area color of text in placeholder */
+$checkboxbg: #fafafa; /* checkbox background */
+$checkboxborder: #cacece; /* checkbox border color */
+$checkboxhoverborder: green; /* checkbox border color when you hover */
+$checkboxchecked: #93d02b; /* checkbox checked color */
