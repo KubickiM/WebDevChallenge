@@ -67,6 +67,8 @@ footer {
     height: 496px;
 }
 
+
+
 form {
     margin-top: 34px;
     margin-bottom: 44px;
@@ -89,7 +91,7 @@ form {
 
 
 
-        input[type=text],
+        input[type=text],input[type=password],    
         select {
             border: 0.5px solid $inputborder;
             border-radius: 2px;
@@ -100,10 +102,9 @@ form {
             height: 39px;
             padding-left: 69px;
             border-radius: 3px;
-            background-color: $inputbg;
-            @include bg-gradient(rgba(0, 0, 0, .38), rgba(255, 255, 255, .38));
+            
 
-            background-blend-mode: overlay;
+           background-blend-mode: overlay;
             transition-duration: 0.5s;
             &:hover {
                 border: 1px solid $inputborderhover;
@@ -130,20 +131,22 @@ form {
         }
 
         .email {
-            background: url(img/email.png) no-repeat 5% !important;
-            background-color: white;
+             
+            background: url(img/email.png) no-repeat 5%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
+        
+          
         }
         .person {
-            background: url(img/person.png) no-repeat 5% !important;
-            background-color: white;
+            background: url(img/person.png) no-repeat 5% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
+            
         }
         .phone {
-            background: url(img/phone.png) no-repeat 6.25% !important;
-            background-color: white;
+            background: url(img/phone.png) no-repeat 6.25% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
+            
         }
         .location {
-            background: url(img/loc.png) no-repeat 6.25%, url(img/arrow.png) no-repeat 97.25% !important;
-            background-color: white;
+            background: url(img/loc.png) no-repeat 6.25%, url(img/arrow.png) no-repeat 97.25% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
+           
             color: lightgray;
 
 
@@ -153,8 +156,8 @@ form {
             appearance: none;
         }
         .lock {
-            background: url(img/lock.png) no-repeat 5% !important;
-            background-color: white;
+            background: url(img/lock.png) no-repeat 5% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
+            
         }
 
     }
@@ -210,6 +213,7 @@ form {
         padding: 10px;
         resize: none;
         transition-duration: 0.5s;
+        @include bg-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
         &:hover {
             border: 1px solid $textareahoberborder;
             box-shadow: inset 200px 200px 0px 200px $textareahoverbg;
@@ -294,7 +298,7 @@ form {
                     top: 5px;
                 }
             }
-            p {
+            label {
                 margin-left: 10px;
 
             }
@@ -302,19 +306,6 @@ form {
     }
 }
 
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-}
-
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-}
 
 
 @media screen and (max-width:790px) {

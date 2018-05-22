@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
 </head>
 
 <body>
@@ -15,42 +16,42 @@
     <main>
 
         <div class="column">
-            <h1>Register form</h1>
+            <h1>Register Form</h1>
             <form class="reg">
 
                 <div class="icon">
                     <span></span>
                  
-                    <input class="person" type="text" name="username" placeholder="Username">
+                    <input class="person" type="text" name="username" placeholder="Username" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                     
-                    <input class="lock" type="text" name="password" placeholder="Password">
+                    <input class="lock" type="password" name="password" placeholder="Password" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                  
-                    <input class="lock" type="text" name="cpassword" placeholder="Confirm Password">
+                    <input class="lock" type="password" name="cpassword" placeholder="Confirm Password" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                    
-                    <input class="email" type="text" name="email" placeholder="e-mail">
+                    <input class="email" type="text" name="email" placeholder="e-mail" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                    
                     
-                    <select class="location" type="text" name="ylocation">
-                        <option value="" disabled="" selected="">Your Location</option>
+                    <select class="location" type="text" name="ylocation" required>
+                        <option value="none" disabled selected>Your Location</option>
                         <option value="Poland">Poland</option>
-                        <option value="Poland">England</option>
-                        <option value="Poland">Germany</option>
+                        <option value="England">England</option>
+                        <option value="Germany">Germany</option>
 
                     </select>
                     
@@ -58,47 +59,47 @@
 
                 <div class="iconc">
                     <div class="checkbox">
-                        <input type="checkbox" name="regu">
-                        <p>Zgadzasz sie na regulamin</p>
+                        <input type="checkbox" name="regu" id="regu" required>
+                        <label for="regu">Zgadzasz sie na regulamin</label>
                     </div>
                 </div>
 
                 <div class="icon">
-                    <input class="input-singup" type="submit" name="submit" value="Sing up">
+                    <input class="input-singup" type="submit" name="submit" value="Sing up" required>
 
                 </div>
 
             </form>
 
-            <h1>Send e-mail</h1>
+            <h1>Send Email</h1>
             <form class="mail">
 
                 <div class="icon">
                     <span></span>
                     
-                    <input class="person" type="text" name="username" placeholder="Username">
+                    <input class="person" type="text" name="username" placeholder="Username" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                     
-                    <input class="email" type="text" name="email" placeholder="Email">
+                    <input class="email" type="text" name="email" placeholder="Email" required>
                 </div>
 
                 <div class="icon">
 
-                    <textarea placeholder="Type your message..."></textarea>
+                    <textarea placeholder="Type your message..." required></textarea>
                 </div>
 
                 <div class="iconc">
                     <div class="checkbox">
-                        <input type="checkbox" name="regu">
-                        <p>Send a copy to my mail</p>
+                        <input type="checkbox" name="regu" id="mailsend" required>
+                        <label for="mailsend">Send a copy to my mail</label>
                     </div>
                 </div>
 
                 <div class="icon">
-                    <input class="input-singup" type="submit" name="submit" value="Send Email">
+                    <input class="input-singup" type="submit" name="submit" value="Send Email" required>
 
                 </div>
 
@@ -107,26 +108,26 @@
 
         </div>
         <div class="column">
-            <h1>Sing in form</h1>
+            <h1>Sing in Form</h1>
             <form class="singin">
                 <div class="icon">
                     <span></span>
                 
-                    <input class="person" type="text" name="username" placeholder="Username">
+                    <input class="person" type="text" name="username" placeholder="Username" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                     
-                    <input class="lock" type="text" name="password" placeholder="Password">
+                    <input class="lock" type="text" name="password" placeholder="Password" required>
                 </div>
 
                 <div class="iconc">
                     <div class="checkbox">
-                        <input type="checkbox" name="regu">
-                        <p>remember me</p>
+                        <input type="checkbox" name="rememb" id="rememb" required>
+                        <label for="rememb">Remember me</label>
                     </div>
-                    <input class="input-singin" type="submit" name="submit" value="Sing in">
+                    <input class="input-singin" type="submit" name="submit" value="Sing in" required>
                 </div>
 
             </form>
@@ -135,13 +136,13 @@
                 <div class="icon">
                     <span></span>
                     
-                    <input class="email" type="text" name="email" placeholder="Enter your Email">
+                    <input class="email" type="text" name="email" placeholder="Enter your Email" required>
                 </div>
 
                 <div class="icon">
                     <span></span>
                     
-                    <input class="phone" type="text" name="phone" placeholder="Enter your phone number">
+                    <input class="phone" type="text" name="phone" placeholder="Enter your phone number" required>
                 </div>
 
                 <div class="iconc">
@@ -150,12 +151,12 @@
                 </div>
 
             </form>
-            <h1>Subscribe form</h1>
+            <h1>Subscribe Form</h1>
             <form class="sub">
                 <div class="icon">
                     <span></span>
                     
-                    <input class="email" type="text" name="email" placeholder="Enter your email">
+                    <input class="email" type="text" name="email" placeholder="Enter your email" required>
                 </div>
 
                 <div class="iconc">
