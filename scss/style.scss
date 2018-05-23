@@ -54,7 +54,7 @@ footer {
     height: 419px;
 }
 
-.singin,
+.signin,
 .recover {
     height: 197px;
 }
@@ -91,7 +91,7 @@ form {
 
 
 
-        input[type=text],input[type=password],    
+        input[type=text],input[type=password],  input[type=email], 
         select {
             border: 0.5px solid $inputborder;
             border-radius: 2px;
@@ -226,13 +226,13 @@ form {
         }
 
     }
-    .input-singup {
+    .input-signup {
         width: 338px;
         height: 48px;
         margin-top: 20px;
         @include auto(auto);
     }
-    .input-singin {
+    .input-signin {
         width: 139px;
         height: 41px;
     }
@@ -318,7 +318,7 @@ form {
     form {
         width: 290px;
         .icon {
-            input[type=text],
+            input[type=text], input[type=email], input[type=password],
             select,
                 {
                 width: 238px;
@@ -331,10 +331,10 @@ form {
         textarea {
             width: 238px;
         }
-        .input-singup {
+        .input-signup {
             width: 238px;
         }
-        .input-singin {
+        .input-signin {
             width: 100px;
             height: 41px;
         }
