@@ -7,17 +7,18 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1 {
+.h1 {
     margin-top: 40px;
     text-align: center;
+    font-size: 2em;
     color: $h1color;
 }
 
-body {
+.body {
     @include bg-img(bg, center, cover);
 }
 
-header {
+.header {
     margin-top: 50px;
     @include bg-img(lg1, center, contain);
     @include auto(auto);
@@ -27,22 +28,14 @@ header {
 }
 
 
-main {
+.main {
     width: 1050px;
     @include auto(auto);
     display: flex;
 }
 
-footer {
-    @include bg-img(lg2, center, contain);
-    width: 100%;
-    @include auto(auto);
-    margin-top: 50px;
-    height: 146px;
-    opacity: 0.4;
-}
 
-.column {
+.main_column {
     display: flex;
     flex-direction: column;
     width: 390px;
@@ -50,26 +43,7 @@ footer {
 
 }
 
-.reg {
-    height: 419px;
-}
-
-.signin,
-.recover {
-    height: 197px;
-}
-
-.sub {
-    height: 140px;
-}
-
-.mail {
-    height: 496px;
-}
-
-
-
-form {
+.form {
     margin-top: 34px;
     margin-bottom: 44px;
     width: 390px;
@@ -80,272 +54,303 @@ form {
     -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .13) inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 9px 1px rgba(0, 0, 0, .13)inset, 0px 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
 
 
+.form_inputbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form_inputbox--checkbox {
+    width: 338px;
+    margin-top: 16px;
+    @include auto(auto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.form_input {
+    border: 0.5px solid $inputborder;
+    border-radius: 2px;
+    @include auto(auto);
+    margin-top: 20px;
+    width: 338px;
+    height: 39px;
+    padding-left: 69px;
     border-radius: 3px;
 
-    .icon {
-        width: 100%;
-        display: flex;
-        align-items: center;
 
+    background-blend-mode: overlay;
+    transition-duration: 0.5s;
+    &:hover {
+        border: 1px solid $inputborderhover;
+        box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
+        transition-duration: 0.5s;
+    }
+    &:focus {
+        color: $inputfocuscolor;
+        outline: none;
+        border: 1px solid $inputborderfocus;
 
-
-        input[type=text],input[type=password],input[type=email],   
-        select {
-            border: 0.5px solid $inputborder;
-            border-radius: 2px;
-            @include auto(auto);
-
-            margin-top: 20px;
-            width: 338px;
-            height: 39px;
-            padding-left: 69px;
-            border-radius: 3px;
-            
-
-           background-blend-mode: overlay;
-            transition-duration: 0.5s;
-            &:hover {
-                border: 1px solid $inputborderhover;
-                box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
-                transition-duration: 0.5s;
-            }
-            &:focus {
-                color: $inputfocuscolor;
-                outline: none;
-                border: 1px solid $inputborderfocus;
-
-                box-shadow: inset 200px 200px 0px 200px $inputbgfocus;
-                background-color: white;
-                transition-duration: 0.5s;
-                &::-webkit-input-placeholder {
-                    color: white;
-                }
-            }
-            &::placeholder {
-                color: $inputplaceholder;
-
-
-            }
+        box-shadow: inset 200px 200px 0px 200px $inputbgfocus;
+        background-color: white;
+        transition-duration: 0.5s;
+        &::-webkit-input-placeholder {
+            color: white;
         }
-
-        .email {
-             
-            background: url(img/email.png) no-repeat 5%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
-        
-          
-        }
-        .person {
-            background: url(img/person.png) no-repeat 5% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
-            
-        }
-        .phone {
-            background: url(img/phone.png) no-repeat 6.25% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
-            
-        }
-        .location {
-            background: url(img/loc.png) no-repeat 6.25%, url(img/arrow.png) no-repeat 97.25% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
-           
-            color: lightgray;
+    }
+    &::placeholder {
+        color: $inputplaceholder;
 
 
-            -webkit-appearance: none;
-            -o-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-        }
-        .lock {
-            background: url(img/lock.png) no-repeat 5% , linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05)) ;
-            
-        }
+    }
+}
+
+.form_input--email {
+
+    background: url(img/email.png) no-repeat 5%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05));
+
+
+}
+
+.form_input--person {
+    background: url(img/person.png) no-repeat 5%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05));
+
+}
+
+.form_input--phone {
+    background: url(img/phone.png) no-repeat 6.25%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05));
+
+}
+
+.form_input--location {
+    background: url(img/loc.png) no-repeat 6.25%, url(img/arrow.png) no-repeat 97.25%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05));
+
+    color: lightgray;
+
+
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form_input--lock {
+    background: url(img/lock.png) no-repeat 5%, linear-gradient(to top, rgba(0, 0, 0, .05), rgba(255, 255, 255, .05));
+
+}
+
+.form_input--separator {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -.3rem;
+        left: 5.1rem;
+        height: 30px;
+        border-right: 1px solid $inputspan;
+    }
+}
+
+.form_submit {
+
+    font-family: TitilliumText22L;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px #51850e;
+    border: 0.5px solid $inputsubmitborder;
+    background-blend-mode: overlay;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
+    @include bg-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
+    background-color: $inputsubmitbg;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        box-shadow: inset 15em 0 0 0 rgba(255, 255, 255, 0.5);
+        border: 1px solid $inputsubmitborderhover;
+    }
+}
+
+.form_submit--done {
+    background-color: $donebg !important;
+    border: solid 1px $doneborder !important;
+}
+
+.form_submit--no {
+    background-color: $nobg !important;
+    border: solid 1px $noborder !important;
+}
+
+
+.form_textarea {
+    border: 0.5px solid $textarea;
+    border-radius: 2px;
+    margin-top: 20px;
+    width: 337px;
+    height: 230px;
+    @include auto(auto);
+    padding: 10px;
+    resize: none;
+    transition-duration: 0.5s;
+    @include bg-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    &:hover {
+        border: 1px solid $textareahoberborder;
+        box-shadow: inset 200px 200px 0px 200px $textareahoverbg;
+        transition-duration: 0.5s;
+    }
+    &::placeholder {
+        color: $textareaplaceholdercolor;
+
 
     }
 
-    span {
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            top: -.3rem;
-            left: 5.1rem;
-            height: 30px;
-            border-right: 1px solid $inputspan;
-        }
+}
+
+.form_submit--big {
+    width: 338px;
+    height: 48px;
+    margin-top: 20px;
+    @include auto(auto);
+}
+
+.form_submit--small {
+    width: 139px;
+    height: 41px;
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox_input {
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $checkboxbg;
+    border: 1px solid $checkboxborder;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    transition-duration: 0.5s;
+    &:hover {
+        border: 1px solid $checkboxhoverborder;
+        box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
+        transition-duration: 0.5s;
     }
-
-    input[type=submit] {
-
-        font-family: TitilliumText22L;
-        font-size: 24px;
-        color: #fff;
-        text-shadow: 1px 1px #51850e;
-        border: 0.5px solid $inputsubmitborder;
+    &:active,
+    &:checked:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    &:checked {
+        background-color: #e9ecee;
+        border: 1px solid #adb8c0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #99a1a7;
+    }
+    &:checked:after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        border-radius: 3px;
         background-blend-mode: overlay;
         box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
         @include bg-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-        background-color: $inputsubmitbg;
-        border-radius: 2px;
-        cursor: pointer;
-        transition: 0.4s;
-        &:hover {
-            box-shadow: inset 15em 0 0 0 rgba(255, 255, 255, 0.5);
-            border: 1px solid $inputsubmitborderhover;
-        }
+        background-color: $checkboxchecked;
+        color: #99a1a7;
+        left: 5px;
+        top: 5px;
     }
-    .done {
-        background-color: $donebg !important;
-        border: solid 1px $doneborder !important;
-    }
-    .no {
-        background-color: $nobg !important;
-        border: solid 1px $noborder !important;
-    }
+}
+
+.checkbox_input--label {
+    margin-left: 10px;
+}
 
 
-    textarea {
-        border: 0.5px solid $textarea;
-        border-radius: 2px;
-        margin-top: 20px;
-        width: 337px;
-        height: 230px;
-        @include auto(auto);
-        padding: 10px;
-        resize: none;
-        transition-duration: 0.5s;
-        @include bg-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
-        &:hover {
-            border: 1px solid $textareahoberborder;
-            box-shadow: inset 200px 200px 0px 200px $textareahoverbg;
-            transition-duration: 0.5s;
-        }
-        &::placeholder {
-            color: $textareaplaceholdercolor;
+.form--reg {
+    height: 419px;
+}
 
+.form--signin,
+.form--recover {
+    height: 197px;
+}
 
-        }
+.form--sub {
+    height: 140px;
+}
 
-    }
-    .input-signup {
-        width: 338px;
-        height: 48px;
-        margin-top: 20px;
-        @include auto(auto);
-    }
-    .input-signin {
-        width: 139px;
-        height: 41px;
-    }
-
-
-
-    .iconc {
-        width: 338px;
-        margin-top: 16px;
-        @include auto(auto);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+.form--mail {
+    height: 496px;
+}
 
 
 
 
-        .checkbox {
-            display: flex;
-            align-items: center;
 
-            input[type=checkbox] {
-
-                -webkit-appearance: none;
-                -o-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                background-color: $checkboxbg;
-                border: 1px solid $checkboxborder;
-                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-                padding: 12px;
-                border-radius: 3px;
-                display: inline-block;
-                position: relative;
-                transition-duration: 0.5s;
-                &:hover {
-                    border: 1px solid $checkboxhoverborder;
-                    box-shadow: inset 200px 200px 0px 200px rgba(194, 255, 191, 0.4);
-                    transition-duration: 0.5s;
-                }
-                &:active,
-                &:checked:active {
-                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
-                }
-                &:checked {
-                    background-color: #e9ecee;
-                    border: 1px solid #adb8c0;
-                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
-                    color: #99a1a7;
-                }
-                &:checked:after {
-                    content: '';
-                    width: 14px;
-                    height: 14px;
-                    position: absolute;
-                    border-radius: 3px;
-                    background-blend-mode: overlay;
-                    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.41);
-                    @include bg-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%);
-                    background-color: $checkboxchecked;
-                    color: #99a1a7;
-                    left: 5px;
-                    top: 5px;
-                }
-            }
-            label {
-                margin-left: 10px;
-
-            }
-        }
-    }
+.footer {
+    @include bg-img(lg2, center, contain);
+    width: 100%;
+    @include auto(auto);
+    margin-top: 50px;
+    height: 146px;
+    opacity: 0.4;
 }
 
 
 
 @media screen and (max-width:790px) {
-    main {
+    .main {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    form {
+    .form {
         width: 290px;
-        .icon {
-            input[type=text],input[type=password],input[type=email],
-            select,
-                {
-                width: 238px;
-            }
-        }
-        .iconc {
+    }
+    .form_inputbox {
+        .form_input {
             width: 238px;
+        }
+    }
+    .form_inputbox--checkbox {
+        width: 238px;
 
-        }
-        textarea {
-            width: 238px;
-        }
-        .input-signup {
-            width: 238px;
-        }
-        .input-signin {
-            width: 100px;
-            height: 41px;
-        }
-        .no {
-            font-size: 20px !important;
-        }
     }
-    .column {
+    .form_textarea {
+        width: 238px;
+    }
+    .form_submit--big {
+        width: 238px;
+    }
+    .form_submit--small{
+        width: 100px;
+        height: 41px;
+    }
+    .form_submit--no {
+        font-size: 20px !important;
+    }
+
+
+    .main_column {
         width: 290px;
     }
-    header {
+
+    .header {
         width: 290px;
     }
 }

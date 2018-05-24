@@ -7,172 +7,171 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
 
-   <header>   
-   
-   </header>
-   
-    <main>
+    <header class="header">
+    </header>
 
-        <div class="column">
-            <h1>Register Form</h1>
-            <form class="reg">
+    <main class="main">
 
-                <div class="icon">
-                    <span></span>
-                 
-                    <input class="person" type="text" name="username" placeholder="Username" required>
+        <section class="main_column">
+            <h1 class="h1">Register Form</h1>
+            <form class="form form--reg">
+
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--person" type="text" name="username" placeholder="Username" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="lock" type="password" name="password" placeholder="Password" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--lock" type="password" name="password" placeholder="Password" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                 
-                    <input class="lock" type="password" name="cpassword" placeholder="Confirm Password" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--lock" type="password" name="cpassword" placeholder="Confirm Password" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                   
-                    <input class="email" type="text" name="email" placeholder="e-mail" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--email" type="text" name="email" placeholder="e-mail" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                   
-                    
-                    <select class="location" type="text" name="ylocation" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+
+                    <select class="form_input form_input--location" type="text" name="ylocation" required>
                         <option value="none" disabled selected>Your Location</option>
                         <option value="Poland">Poland</option>
                         <option value="England">England</option>
                         <option value="Germany">Germany</option>
 
                     </select>
-                    
+
                 </div>
 
-                <div class="iconc">
+                <div class="form_inputbox--checkbox">
                     <div class="checkbox">
-                        <input type="checkbox" name="regu" id="regu" required>
-                        <label for="regu">Zgadzasz sie na regulamin</label>
+                        <input type="checkbox" class="checkbox checkbox_input" name="regu" id="regu" required>
+                        <label for="regu" class="checkbox <checkbox_input--label></checkbox_input--label>">Zgadzasz sie na regulamin</label>
                     </div>
                 </div>
 
-                <div class="icon">
+                <div class="form_inputbox">
 
-                    <input class="input-signup" type="submit" name="submit" value="Sign up" required>
+                    <input class="form_submit form_submit--big" type="submit" name="submit" value="Sign up" required>
 
 
                 </div>
 
             </form>
 
-            <h1>Send Email</h1>
-            <form class="mail">
+            <h2 class="h1">Send Email</h2>
+            <form class="form form--mail">
 
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="person" type="text" name="username" placeholder="Username" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--person" type="text" name="username" placeholder="Username" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="email" type="text" name="email" placeholder="Email" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--email" type="text" name="email" placeholder="Email" required>
                 </div>
 
-                <div class="icon">
+                <div class="form_inputbox">
 
-                    <textarea placeholder="Type your message..." required></textarea>
+                    <textarea class="form_textarea" placeholder="Type your message..." required></textarea>
                 </div>
 
-                <div class="iconc">
+                <div class="form_inputbox--checkbox">
                     <div class="checkbox">
-                        <input type="checkbox" name="regu" id="mailsend" required>
-                        <label for="mailsend">Send a copy to my mail</label>
+                        <input type="checkbox" class="checkbox_input" name="regu" id="mailsend" required>
+                        <label class="checkbox_input--label" for="mailsend">Send a copy to my mail</label>
                     </div>
                 </div>
 
-                <div class="icon">
-                    <input class="input-signup" type="submit" name="submit" value="Send Email" required>
+                <div class="form_inputbox">
+                    <input class="form_submit form_submit--big" type="submit" name="submit" value="Send Email" required>
 
                 </div>
 
             </form>
 
 
-        </div>
-        <div class="column">
-            <h1>Sign in Form</h1>
+        </section>
+        <section class="main_column">
+            <h2 class="h1">Sign in Form</h2>
 
-            <form class="signin">
+            <form class="form form--signin">
 
-                <div class="icon">
-                    <span></span>
-                
-                    <input class="person" type="text" name="username" placeholder="Username" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--person" type="text" name="username" placeholder="Username" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="lock" type="text" name="password" placeholder="Password" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--lock" type="text" name="password" placeholder="Password" required>
                 </div>
 
-                <div class="iconc">
+                <div class="form_inputbox--checkbox">
                     <div class="checkbox">
-                        <input type="checkbox" name="rememb" id="rememb" required>
-                        <label for="rememb">Remember me</label>
+                        <input type="checkbox" class="checkbox_input" name="rememb" id="rememb" required>
+                        <label class="checkbox_input--label" for="rememb">Remember me</label>
                     </div>
 
-                    <input class="input-signin" type="submit" name="submit" value="Sign in" required>
+                    <input class="form_submit form_submit--small" type="submit" name="submit" value="Sign in" required>
 
                 </div>
 
             </form>
-            <h1>Recover Form</h1>
-            <form class="signin">
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="email" type="text" name="email" placeholder="Enter your Email" required>
+            <h2 class="h1">Recover Form</h2>
+            <form class="form form--signin">
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--email" type="text" name="email" placeholder="Enter your Email" required>
                 </div>
 
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="phone" type="text" name="phone" placeholder="Enter your phone number" required>
+                <div class="form_inputbox">
+                    <span class="form_input--separator"></span>
+
+                    <input class="form_input form_input--phone" type="text" name="phone" placeholder="Enter your phone number" required>
                 </div>
 
-                <div class="iconc">
-                    <input class="input-signin" type="submit" name="submit" value="Send">
-                    <input class="input-signin done" type="submit" name="submit" value="Done">
-                </div>
-
-            </form>
-            <h1>Subscribe Form</h1>
-            <form class="sub">
-                <div class="icon">
-                    <span></span>
-                    
-                    <input class="email" type="text" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="iconc">
-                    <input class="input-signin" type="submit" name="submit" value="Subscribe">
-                    <input class="input-signin no" type="submit" name="submit" value="No, Thanks">
+                <div class="form_inputbox--checkbox">
+                    <input class="form_submit form_submit--small" type="submit" name="submit" value="Send">
+                    <input class="form_submit form_submit--small form_submit--done" type="submit" name="submit" value="Done">
                 </div>
 
             </form>
-            <footer></footer>
-        </div>
+            <h2 class="h1">Subscribe Form</h2>
+            <form class="form form--sub">
+                <div class="form_inputbox">
+                    <span></span>
+
+                    <input class="form_input form_input--email" type="text" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form_inputbox--checkbox">
+                    <input class="form_submit form_submit--small" type="submit" name="submit" value="Subscribe">
+                    <input class="form_submit form_submit--small form_submit--no" type="submit" name="submit" value="No, Thanks">
+                </div>
+
+            </form>
+            <footer class="footer"></footer>
+        </section>
     </main>
 
 </body>
